@@ -42,7 +42,6 @@ select_box1 = st.sidebar.selectbox(label='X axis', options=numeric_columns)
 select_box2 = st.sidebar.selectbox(label="Y axis", options=numeric_columns)
 sns.relplot(x=select_box1, y=select_box2, data=data)
 st.pyplot()
-
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
